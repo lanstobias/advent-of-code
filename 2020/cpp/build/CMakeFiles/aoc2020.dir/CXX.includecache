@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ubuntu/aoc/2020/src/main.cpp
+tools.hpp
+/home/ubuntu/aoc/2020/src/tools.hpp
+iostream
+-
+
+/home/ubuntu/aoc/2020/src/tools.hpp
+iostream
+-
+vector
+-
+fstream
+-
+
