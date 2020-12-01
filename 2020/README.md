@@ -2,5 +2,5 @@
 
 |Day|Name|Solution|
 |---|---|---|
-|[1](https://github.coReport Repair|Report Repair|[py](2020/python/day1.py)|
+|[1](https://adventofcode.com/2020/day/1)|Report Repair|[py](/2020/python/day1.py)|
 
