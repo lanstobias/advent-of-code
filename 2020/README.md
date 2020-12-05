@@ -2,6 +2,7 @@
 
 |Day|Name|Solution|
 |---|---|---|
-|[1](https://adventofcode.com/2020/day/1)|Report Repair|[py](/2020/python/day1.py)|
-|[2](https://adventofcode.com/2020/day/2)|Password Philosophy|[py](/2020/python/day2.py)|
-
+|1|[Report Repair](https://adventofcode.com/2020/day/1)|[py](/2020/python/day1.py)|
+|2|[Password Philosophy](https://adventofcode.com/2020/day/2)|[py](/2020/python/day2.py)|
+|3|[Toboggan Trajectory](https://adventofcode.com/2020/day/3)|[py](/2020/python/day3.py)|
+|4|[Passport Processing](https://adventofcode.com/2020/day/4)|[py](/2020/python/day4.py)|
