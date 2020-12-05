@@ -6,3 +6,4 @@
 |2|[Password Philosophy](https://adventofcode.com/2020/day/2)|[py](/2020/python/day2.py)|
 |3|[Toboggan Trajectory](https://adventofcode.com/2020/day/3)|[py](/2020/python/day3.py)|
 |4|[Passport Processing](https://adventofcode.com/2020/day/4)|[py](/2020/python/day4.py)|
+|4|[Binary Boarding](https://adventofcode.com/2020/day/5)|[py](/2020/python/day5.py)|
