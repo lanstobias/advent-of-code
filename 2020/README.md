@@ -8,3 +8,4 @@
 |4|[Passport Processing](https://adventofcode.com/2020/day/4)|[py](/2020/python/day4.py)|
 |5|[Binary Boarding](https://adventofcode.com/2020/day/5)|[py](/2020/python/day5.py)|
 |6|[Custom Custom](https://adventofcode.com/2020/day/6)|[py](/2020/python/day6.py)|
+|7|[Handy Haversacks](https://adventofcode.com/2020/day/7)|[py](/2020/python/day7.py)|
