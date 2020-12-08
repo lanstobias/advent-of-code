@@ -1,5 +1,7 @@
+import copy
+
 program = []
-with open("input/day8_test.txt") as lines:
+with open("input/day8.txt") as lines:
     instr = []
     for line in lines:
         line = line.strip()
@@ -7,71 +9,21 @@ with open("input/day8_test.txt") as lines:
         instruction.append(0)
         program.append(instruction)
 
-def run_program(program):
-    COUNTER = 2
-    acc = 0
-    ptr = 0
-    running = True
-    while running == True:
-        operator = program[ptr][0]
-        argument = program[ptr][1][0]
-        value = int(program[ptr][1][1:])
-
-        print(program[ptr])
-        print('ptr: {}'.format(ptr))
-        print('acc: {}'.format(acc))
-
-        if ptr > len(program):
-            print('end, acc: {}'.format(acc))
-            return False
-
-        if program[ptr][COUNTER] > 0:
-            print('second run, acc: {}'.format(acc))
-            return True
-
-        if operator == 'acc':
-            program[ptr][COUNTER] += 1
-            if argument == '+':
-                acc += value
-            elif argument == '-':
-                acc -= value
-            ptr += 1
-
-        if operator == 'jmp':
-            program[ptr][COUNTER] += 1
-            if argument == '+':
-                ptr = ptr + value
-            elif argument == '-':
-                ptr = ptr - value
-
-        if operator == 'nop':
-            program[ptr][COUNTER] += 1
-            ptr += 1
-
-
-def run_program2(program):
+def run(prog):
     COUNTER = 2
     acc = 0
     pc = 0
-    while pc < len(program):
-        operator = program[pc][0]
-        argument = program[pc][1][0]
-        value = int(program[pc][1][1:])
-        print(pc)
+    while pc < len(prog):
+        operator = prog[pc][0]
+        argument = prog[pc][1][0]
+        value = int(prog[pc][1][1:])
 
-        if program[pc][COUNTER] > 0:
-            return None
-
-        if pc == (len(program) - 1):
-            # print('END, acc: {}'.format(acc))
-            return acc
-
-        # print(program[pc])
-        # print('pc: {}'.format(pc))
-        # print('acc: {}'.format(acc))
+        # Part 1
+        if prog[pc][COUNTER] > 0:
+            return acc, False
 
         if operator == 'acc':
-            program[pc][COUNTER] += 1
+            prog[pc][COUNTER] += 1
             if argument == '+':
                 acc += value
             elif argument == '-':
@@ -79,36 +31,37 @@ def run_program2(program):
             pc += 1
 
         if operator == 'jmp':
-            program[pc][COUNTER] += 1
+            prog[pc][COUNTER] += 1
             if argument == '+':
                 pc += value
             elif argument == '-':
                 pc -= value
 
         if operator == 'nop':
-            program[pc][COUNTER] += 1
+            prog[pc][COUNTER] += 1
             pc += 1
 
-    return acc
+    return acc, True
 
-def manipulate_program(program, i, new_operator):
-    program[i][0] = new_operator
-    return program
+# acc, ret = run(program)
+# if not ret:
+    # print('Part 1: {}'.format(acc))
 
-for i in range(len(program)):
-    if program[i][0] == 'acc':
-        continue
+# Extremely inefficient brute force, maybe refactor it if I have time
+def part2():
+    for i in range(len(program)):
+        if program[i][0] == 'acc':
+            continue
+        if program[i][0] == 'nop':
+            new_operator = 'jmp'
+        elif program[i][0] == 'jmp':
+            new_operator = 'nop'
 
-    if program[i][0] == 'nop':
-        new_operator = 'jmp'
-    elif program[i][0] == 'jmp':
-        new_operator = 'nop'
+        new_program = copy.deepcopy(program)
+        new_program[i][0] = new_operator
 
-    print(program)
-    new_program = manipulate_program(program, i, new_operator)
-    print(new_program)
-    print('--------------')
-    ret = run_program2(new_program)
-    if ret is not None:
-        print(ret)
+        acc, ret = run(new_program)
+        if ret:
+            return acc
 
+print('Part 2: {}'.format(part2()))

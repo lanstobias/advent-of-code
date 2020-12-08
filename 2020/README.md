@@ -9,3 +9,4 @@
 |5|[Binary Boarding](https://adventofcode.com/2020/day/5)|[py](/2020/python/day5.py)|
 |6|[Custom Custom](https://adventofcode.com/2020/day/6)|[py](/2020/python/day6.py)|
 |7|[Handy Haversacks](https://adventofcode.com/2020/day/7)|[py](/2020/python/day7.py)|
+|8|[Handheld Halting](https://adventofcode.com/2020/day/8)|[py](/2020/python/day8.py)|
