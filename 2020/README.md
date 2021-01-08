@@ -10,3 +10,8 @@
 |6|[Custom Custom](https://adventofcode.com/2020/day/6)|[py](/2020/python/day6.py)|
 |7|[Handy Haversacks](https://adventofcode.com/2020/day/7)|[py](/2020/python/day7.py)|
 |8|[Handheld Halting](https://adventofcode.com/2020/day/8)|[py](/2020/python/day8.py)|
+|9|[Encoding Error](https://adventofcode.com/2020/day/9)|[py](/2020/python/day9.py)|
+|10|[Adapter Array](https://adventofcode.com/2020/day/10)|[py](/2020/python/day10.py)|
+|11|[Seating System](https://adventofcode.com/2020/day/11)|[py](/2020/python/day11.py)|
+|12|[Rain Risk](https://adventofcode.com/2020/day/12)||
+|13|[Shuttle Search](https://adventofcode.com/2020/day/13)|[py](/2020/python/day13.py)|
