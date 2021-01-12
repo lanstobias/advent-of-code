@@ -13,5 +13,7 @@
 |9|[Encoding Error](https://adventofcode.com/2020/day/9)|[py](/2020/python/day9.py)|
 |10|[Adapter Array](https://adventofcode.com/2020/day/10)|[py](/2020/python/day10.py)|
 |11|[Seating System](https://adventofcode.com/2020/day/11)|[py](/2020/python/day11.py)|
-|12|[Rain Risk](https://adventofcode.com/2020/day/12)||
+|12|[Rain Risk](https://adventofcode.com/2020/day/12)|
 |13|[Shuttle Search](https://adventofcode.com/2020/day/13)|[py](/2020/python/day13.py)|
+|14|[Docking Data](https://adventofcode.com/2020/day/14)|
+|15|[Rambunctious Recitation](https://adventofcode.com/2020/day/15)|[py](/2020/python/day15.py)|
