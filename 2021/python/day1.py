@@ -20,13 +20,20 @@ def part1():
 print('Part 1: {}'.format(part1()))
 
 def part2():
-    i = 0
+    counter = 0
+    prev_sum = -1
 
-    # Check if end
-    if len(i + 2) > values:
-        return
+    for i, value in enumerate(values):
+        if len(values) <= (i + 2):
+            return counter
 
-    if (values[i] and values)
+        summ = values[i] + values[i+1] + values[i+2]
 
-print('Part 1: {}'.format(part1()))
+        if summ > prev_sum:
+            if prev_sum >= 0:
+                counter += 1
+
+        prev_sum = summ
+
+print('Part 2: {}'.format(part2()))
 
