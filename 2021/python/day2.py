@@ -1,19 +1,11 @@
-def read_values(filename):
-    values = []
-    with open(filename) as infile:
-        for line in infile:
-            values.append(line.split())
-    return values
+horizontal = depth = aim = 0
 
-coordinates = read_values('input/day2.txt')
-
-def part1():
-    horizontal = 0
-    depth = 0
-    aim = 0
-    for coordinate in coordinates:
+with open("input/day2.txt") as infile:
+    for line in infile:
+        coordinate = line.split()
         direction = coordinate[0]
         steps = int(coordinate[1])
+
         if direction == 'forward':
             horizontal += steps
             depth += (aim * steps)
@@ -22,9 +14,5 @@ def part1():
         if (direction == 'down'):
             aim += steps
 
-        print(horizontal, aim, depth)
-
-    return horizontal * depth
-
-print('Part 1: {}'.format(part1()))
+print(horizontal * depth)
 
